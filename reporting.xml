@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!-- This file is part stock_buttons module for Tryton.
+The COPYRIGHT file at the top level of this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data depends="sale">
+        <menuitem name="Reporting" id="sale.menu_reporting" active="0"/>
+    </data>
+</tryton>
