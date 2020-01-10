@@ -3,6 +3,14 @@
 The COPYRIGHT file at the top level of this repository contains the full copyright notices and license terms. -->
 <tryton>
     <data depends="sale">
-        <menuitem name="Reporting" id="sale.menu_reporting" active="0"/>
+        <record model="res.group" id="group_show_core_reports">
+            <field name="name">Show Core Reports</field>
+        </record>
+
+        <record model="ir.ui.menu-res.group" id="menu_hide_sale_reports">
+            <field name="menu" ref="sale.menu_reporting"/>
+            <field name="group" ref="group_show_core_reports"/>
+        </record>
+
     </data>
 </tryton>
